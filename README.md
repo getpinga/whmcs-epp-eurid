@@ -1,29 +1,42 @@
-# Compatibility
+# ⚠️ Deprecated: WHMCS EPP EURid
 
-This module is supposed to work with **EURid - .eu**
+This repository is **deprecated** and is no longer maintained.
 
-# WHMCS Module Installation instructions
+It has been replaced by the actively maintained, generic WHMCS EPP registrar module:
 
-1. Download and install [WHMCS](https://whmcs.com/)
+👉 https://github.com/getnamingo/whmcs-epp-registrar
 
-2. Place the repository as **eurid** directory in `[WHMCS]/modules/registrars`, place your key.pem and cert.pem files in the same eurid directory.
+---
 
-3. Activate from Configuration -> Apps & Integrations -> (search for _eurid_) -> Activate
+## What changed?
 
-4. Configure from Configuration -> System Settings -> Domain Registrars
+This project was created for EURid-style EPP integrations. It is now obsolete and has been superseded by a cleaner, more flexible module intended for broad EPP registry compatibility.
 
-5. Add a new TLD using Configuration -> System Settings -> Domain Pricing
+---
 
-6. Create a **whois.json** file in `[WHMCS]/resources/domains` and add the following:
+## What should you do?
 
-```
-[
-    {
-        "extensions": ".eu",
-        "uri": "socket://whois.eurid.eu",
-        "available": "AVAILABLE"
-    }
-]
-```
+- **New installations**: use  
+  https://github.com/getnamingo/whmcs-epp-registrar
 
-You should be good to go now.
+- **Existing installations**: plan migration to  
+  https://github.com/getnamingo/whmcs-epp-registrar
+
+No further updates or fixes will be released for this repository.
+
+---
+
+## Status
+
+- ❌ Deprecated
+- ❌ No active development
+- ❌ No support
+
+Use the current project instead:  
+https://github.com/getnamingo/whmcs-epp-registrar
+
+---
+
+## License
+
+This repository remains available under its original license.
